@@ -10,7 +10,7 @@ powerdatasubset <- powerdata[powerdata$Date == "1/2/2007" | powerdata$Date == "2
 #Active graphics device, set number off graphs, graph data in each graph, close graphics device
 png("plot4.png", width=480, height=480)
 par(mfrow = c(2, 2))
-plot(x=powerdatasubset$Time, y=powerdatasubset$Global_active_power,type="l",xlab="",ylab = "Global Active Power (kilowatts)")
+plot(x=powerdatasubset$Time, y=powerdatasubset$Global_active_power,type="l",xlab="",ylab = "Global Active Power")
 plot(x=powerdatasubset$Time, y=powerdatasubset$Voltage,type="l",xlab="datetime",ylab = "Voltage")
 plot(x=powerdatasubset$Time, y=powerdatasubset$Sub_metering_1,type="l",xlab="",ylab = "Energy sub metering")
 lines(x=powerdatasubset$Time, y=powerdatasubset$Sub_metering_2,col="Red")

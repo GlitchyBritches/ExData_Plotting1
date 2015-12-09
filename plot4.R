@@ -15,5 +15,6 @@ plot(x=powerdatasubset$Time, y=powerdatasubset$Voltage,type="l",xlab="datetime",
 plot(x=powerdatasubset$Time, y=powerdatasubset$Sub_metering_1,type="l",xlab="",ylab = "Energy sub metering")
 lines(x=powerdatasubset$Time, y=powerdatasubset$Sub_metering_2,col="Red")
 lines(x=powerdatasubset$Time, y=powerdatasubset$Sub_metering_3,col="Blue")
+legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, bty = "n", col=c("black", "red", "blue"))
 plot(x=powerdatasubset$Time, y=powerdatasubset$Global_reactive_power,type="l",xlab="datetime",ylab = "Global_reactive_power")
 dev.off()
